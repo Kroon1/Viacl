@@ -3,7 +3,10 @@ var saga = new Saga({});
 
 saga
 
-  .addTask({ id: "createOrder", transaction: fn1, compensation: cp1 })
+  .addTask(
+  
+    { id: "createOrder", transaction: fn1, compensation: cp1 })
+    
   .addParallelTasks(
   
     { id: "bookAuto", transaction: fn2 },
