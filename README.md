@@ -1,9 +1,7 @@
 # Příklad použití
 var saga = new Saga({});
 
-saga
-
-  .addTask(
+saga.addTask(
   
     { id: "createOrder", transaction: fn1, compensation: cp1 })
     
