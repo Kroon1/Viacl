@@ -11,6 +11,8 @@ saga
     { id: "buyTicket", transaction: fn3, compensation: cp3 }
     
   )
-  .addTask({ id: "reserveHotel", transaction: fn4, compensation: cp4 });
+  .addTask(
+  
+    { id: "reserveHotel", transaction: fn4, compensation: cp4 });
   
 saga.run({ startAt: dateStart, endAt: dateEnd });
